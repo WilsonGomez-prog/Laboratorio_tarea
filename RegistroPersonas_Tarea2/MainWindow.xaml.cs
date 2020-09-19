@@ -24,6 +24,7 @@ namespace RegistroPersonas_Tarea2
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = Persona;
         }
 
         private void Limpiar()
@@ -67,7 +68,7 @@ namespace RegistroPersonas_Tarea2
         {
             if(!Validar())
                 return;
-            
+                
             var guardo = PersonasBLL.Guardar(Persona);
 
             if(guardo)

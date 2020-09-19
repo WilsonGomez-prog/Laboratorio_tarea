@@ -8,6 +8,6 @@ public class Contexto : DbContext
     {
         base.OnConfiguring(optionsBuilder);
 
-        optionsBuilder.UseSqlite(@"Data Source=Personas.db");
+        optionsBuilder.UseSqlite(@"Data Source=DATA\Personas.db");
     }
 }

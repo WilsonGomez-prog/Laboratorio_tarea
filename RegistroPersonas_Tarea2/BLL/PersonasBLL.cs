@@ -13,6 +13,7 @@ public class PersonasBLL
     ///<param name ="persona">Es la entidad(Persona) que se desea insertar.</param>
     public static bool Guardar(Personas persona)
     {
+
         if(!Existe(persona.PersonaId))
         {
             return Insertar(persona);

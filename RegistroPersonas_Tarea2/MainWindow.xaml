@@ -17,7 +17,7 @@
             <Button x:Name="BuscarButton" Height="40" Width="85" Margin="360, -25, 0, 0" Click="BuscarButton_Click">
                 <DockPanel>
                     <TextBlock> Buscar </TextBlock>
-                    <Image Source ="..\recursos\search_Icon.png" Width="26" Margin="5, 0, 0, 0"/>
+                    <Image Source ="C:\Users\wilso\source\repos\Laboratorio_tarea\RegistroPersonas_Tarea2\recursos\search_Icon.png" Width="26" Margin="5, 0, 0, 0"/>
                 </DockPanel>
             </Button>
 
@@ -46,21 +46,21 @@
             <Button x:Name="NuevoButton" Height="40" Width="85" Margin="-300, 15, 0, 0" Click="NuevoButton_Click">
                 <DockPanel>
                     <TextBlock> Nuevo </TextBlock>
-                    <Image Source ="..\recursos\newFile_icon.png" Width="26" Margin="5, 0, 0, 0" />
+                    <Image Source ="C:\Users\wilso\source\repos\Laboratorio_tarea\RegistroPersonas_Tarea2\recursos\newFile_icon.png" Width="26" Margin="5, 0, 0, 0" />
                 </DockPanel>
             </Button>
 
             <Button x:Name="GuardarButton" Height="40" Width="85" Margin="-50, -40, 0, 0" Click="GuardarButton_Click">
                 <DockPanel>
                     <TextBlock> Guardar </TextBlock>
-                    <Image Source ="..\recursos\save_icon.png" Width="26" Margin="5, 0, 0, 0"/>
+                    <Image Source ="C:\Users\wilso\source\repos\Laboratorio_tarea\RegistroPersonas_Tarea2\recursos\save_icon.png" Width="26" Margin="5, 0, 0, 0"/>
                 </DockPanel>
             </Button>
 
             <Button x:Name="EliminarButton" Height="40" Width="85" Margin="200, -40, 0, 0" Click="EliminarButton_Click" >
                 <DockPanel>
                     <TextBlock> Eliminar </TextBlock>
-                    <Image Source ="..\recursos\delete_Icon.png" Width="26" Margin="5, 0, 0, 0"/>
+                    <Image Source ="C:\Users\wilso\source\repos\Laboratorio_tarea\RegistroPersonas_Tarea2\recursos\delete_Icon.png" Width="26" Margin="5, 0, 0, 0"/>
                 </DockPanel>
             </Button>
         </StackPanel>
