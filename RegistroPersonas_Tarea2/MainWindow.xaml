@@ -1,0 +1,68 @@
+﻿<Window x:Class="RegistroPersonas_Tarea2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RegistroPersonas_Tarea2"
+        mc:Ignorable="d"
+        Title="Registro" 
+        Height="475" Width="500" 
+        ResizeMode="NoResize"
+        Background="LightGray">
+    <Grid>
+        <StackPanel> 
+            <!--PersonaId-->
+            <Label Content="ID:" FontSize="15" Height="30" Width="30" Margin="-375, 20, 0, 0"/>
+            <TextBox x:Name="PersonaIdTextBox" Text="{Binding PersonaId}" Height="25" Width="160" Margin="100, -25, 0, 0"/>
+            <Button x:Name="BuscarButton" Height="40" Width="85" Margin="360, -25, 0, 0" Click="BuscarButton_Click">
+                <DockPanel>
+                    <TextBlock> Buscar </TextBlock>
+                    <Image Source ="..\recursos\search_Icon.png" Width="26" Margin="5, 0, 0, 0"/>
+                </DockPanel>
+            </Button>
+
+            <!--Nombres-->
+            <Label Content="Nombre:" FontSize="15" Height="30" Width="70" Margin="-340, 20, 0, 0"/>
+            <TextBox x:Name="NombreTextBox" Text="{Binding Nombre}" Height="25" Width="160" Margin="100, -25, 0, 0"/>
+            
+
+            <!--Telefono-->
+            <Label Content="Telefono:" FontSize="15" Height="30" Width="70" Margin="-340, 25, 0, 0"/>
+            <TextBox x:Name="TelefonoTextBox" Text="{Binding Telefono}" Height="25" Width="160" Margin="100, -25, 0, 0"/>
+            
+            <!--Cedula-->
+            <Label Content="Cedula:" FontSize="15" Height="30" Width="60" Margin="-350, 30, 0, 0"/>
+            <TextBox x:Name="CedulaTextBox" Text="{Binding Cedula}" Height="25" Width="160" Margin="100, -25, 0, 0"/>
+            
+            <!--Direccion-->
+            <Label Content="Direccion:" FontSize="15" Height="30" Width="75" Margin="-335, 35, 0, 0"/>
+            <TextBox x:Name="DireccionTextBox" Text="{Binding Direccion}" Height="25" Width="160" Margin="100, -25, 0, 0"/>
+            
+            <!--Fecha de nacimiento-->
+            <Label Content="Fecha de nacimiento:" FontSize="15" Height="30" Width="155" Margin="-255, 40, 0, 0"/>
+            <DatePicker x:Name="NacimientoDatePicker" Text="{Binding Nacimiento}" Height="25" Width="160"  Margin="100, -25, 0, 0"/>
+            
+            <!-- Botones -->
+            <Button x:Name="NuevoButton" Height="40" Width="85" Margin="-300, 15, 0, 0" Click="NuevoButton_Click">
+                <DockPanel>
+                    <TextBlock> Nuevo </TextBlock>
+                    <Image Source ="..\recursos\newFile_icon.png" Width="26" Margin="5, 0, 0, 0" />
+                </DockPanel>
+            </Button>
+
+            <Button x:Name="GuardarButton" Height="40" Width="85" Margin="-50, -40, 0, 0" Click="GuardarButton_Click">
+                <DockPanel>
+                    <TextBlock> Guardar </TextBlock>
+                    <Image Source ="..\recursos\save_icon.png" Width="26" Margin="5, 0, 0, 0"/>
+                </DockPanel>
+            </Button>
+
+            <Button x:Name="EliminarButton" Height="40" Width="85" Margin="200, -40, 0, 0" Click="EliminarButton_Click" >
+                <DockPanel>
+                    <TextBlock> Eliminar </TextBlock>
+                    <Image Source ="..\recursos\delete_Icon.png" Width="26" Margin="5, 0, 0, 0"/>
+                </DockPanel>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
